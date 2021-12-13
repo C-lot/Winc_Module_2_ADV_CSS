@@ -1,0 +1,79 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+.container-site {
+  display: flex;
+}
+
+.box1 {
+  width: 400px;
+  height: 200px;
+  display: grid;
+  grid-template-areas:
+    "h1 h1 f"
+    "h2 h2 f"
+    "p p p"
+    "b1 b2 b2";
+  grid-template-columns: 200px 140px 60px;
+  grid-template-rows: 20px 10px 100px 70px;
+  border: 2px lightgrey solid;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.name {
+  grid-area: h1;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+.friends {
+  grid-area: h2;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 25px;
+  color: lightgray;
+}
+.foto {
+  grid-area: f;
+  width: 50px;
+  height: 10px;
+  padding-top: 10px;
+}
+.request p {
+  padding-left: 25px;
+}
+
+.request {
+  grid-area: p;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  border-bottom: 1px lightgray solid;
+}
+
+.button1 {
+  grid-area: b1;
+  text-align: center;
+  padding-top: 10px;
+  color: lightgreen;
+  border: 2px lightgreen solid;
+  border-radius: 5px;
+  margin: 10px;
+  margin-right: 0;
+}
+
+.button2 {
+  grid-area: b2;
+  text-align: center;
+  padding-top: 10px;
+  color: red;
+  border: 2px red solid;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: 0;
+}
